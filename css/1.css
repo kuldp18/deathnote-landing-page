@@ -5,3 +5,88 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* padding */
+  --padding-large: 2rem;
+  --padding-m: 1.5rem;
+  --padding-s: 1.2rem;
+  /* fonts */
+  --large-font: 2rem;
+  --medium-font: 1.5rem;
+  --small-font: 1rem;
+  /* backgrounds */
+  --header-bg: rgba(0, 0, 0, 0.9);
+  /* colors */
+  --primary-color: white;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--header-bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-m);
+}
+.header_left,
+.header_right .nav_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_left {
+  gap: 2rem;
+}
+
+.header_left button {
+  font-size: var(--small-font);
+  cursor: pointer;
+}
+
+.header_right .nav_links {
+  justify-content: space-evenly;
+}
+
+.header_right .nav_links a {
+  color: var(--primary-color);
+  font-size: var(--medium-font);
+}
+
+.header_left,
+.header_right {
+  flex: 1;
+}
+
+.header_left .logo_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+}
+
+.header_left .logo_container img {
+  object-fit: cover;
+}
+
+.header_left button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 950px) {
+  .header_right {
+    display: none;
+  }
+}
