@@ -5,9 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Death Note</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/1.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header class="header">
+      <div class="header_left">
+        <div class="logo_container">
+          <img src="" alt="Death Note" />
+        </div>
+        <button id="music-btn">
+          <i class="fa-solid fa-music"></i>
+        </button>
+        <button id="sources-btn">Sources</button>
+      </div>
+      <div class="header_right">
+        <ul class="nav_links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero_left">
+        <h1 id="title">Welcome to Death Note</h1>
+        <p class="desc">
+          The story follows Light Yagami, a teen genius who discovers a
+          mysterious notebook: the "Death Note", which belonged to the Shinigami
+          Ryuk, and grants the user the supernatural ability to kill anyone
+          whose name is written in its pages.
+        </p>
+        <a
+          class="hero_btn"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+          type="_blank"
+          >Watch Now</a
+        >
+      </div>
+      <div class="hero_right">
+        <div class="hero_img_container">
+          <img src="" alt="Hero Image" id="hero_image" />
+        </div>
+      </div>
+    </main>
+
+    <section class="info">
+      <h3>Characters</h3>
+      <div class="characters">
+        <div class="character">
+          <img src="" alt="Light Yagami" class="character-img" />
+          <p class="about">Light Yagami</p>
+        </div>
+        <div class="character">
+          <img src="" alt="L" class="character-img" />
+          <p class="about">L</p>
+        </div>
+        <div class="character">
+          <img src="" alt="Ryuk" class="character-img" />
+          <p class="about">Ryuk</p>
+        </div>
+        <div class="character">
+          <img src="" alt="Miss Amane" class="character-img" />
+          <p class="about">Miss Amane</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <q
+        >In this world, there are very few people who actually trust each
+        other.</q
+      >
+      <h3>- Light Yagami</h3>
+    </section>
+
+    <section class="cta">
+      <div class="cta_container">
+        <div class="cta_left">
+          <h2>Get a FREE Death Note Today!</h2>
+          <p>Shipping charges wordlwide are also free.</p>
+        </div>
+        <div class="cta_right">
+          <button>Get Now</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Made with 💀 by
+      <span
+        ><a href="https://github.com/kuldp18" target="_blank"
+          >Kuldeep Solanki</a
+        ></span
+      >
+    </footer>
   </body>
 </html>
