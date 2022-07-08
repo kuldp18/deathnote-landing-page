@@ -206,6 +206,53 @@ ul li a {
   object-position: bottom center;
 }
 
+/* quote */
+.quote_wrapper {
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+  color: var(--primary-color);
+  gap: 2rem;
+  padding: var(--padding-m);
+}
+
+.quote q {
+  font-size: var(--large-font);
+}
+
+.quote h3 {
+  font-size: var(--medium-font);
+}
+
+.quote .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+.quote .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.742);
+  z-index: -2;
+}
+
 /* media queries */
 @media (max-width: 950px) {
   .header_right {
