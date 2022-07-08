@@ -8,7 +8,7 @@
 
 :root {
   /* padding */
-  --padding-large: 2rem;
+  --padding-large: 2.8rem;
   --padding-m: 1.5rem;
   --padding-s: 1.2rem;
   /* fonts */
@@ -17,7 +17,7 @@
   --medium-font: 1.5rem;
   --small-font: 1rem;
   /* backgrounds */
-  --header-bg: rgba(0, 0, 0, 0.9);
+  --header-bg: rgba(0, 0, 0, 0.95);
   /* colors */
   --primary-color: white;
   --secondary-color: #d61831;
@@ -96,12 +96,29 @@ ul li a {
 .hero {
   width: 100%;
   height: calc(100vh - 15vh);
+
+  position: relative;
+}
+
+.hero video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1000;
+}
+
+.hero_content {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
   padding: var(--padding-m);
+  z-index: 30;
+  height: 100%;
 }
+
 .hero_left,
 .hero_right {
   flex: 1;
@@ -111,12 +128,16 @@ ul li a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: var(--padding-large);
+  background-color: var(--header-bg);
 }
 .hero_left #title {
   font-size: var(--xlarge-font);
+  color: var(--primary-color);
 }
 .hero_left .desc {
   font-size: var(--medium-font);
+  color: var(--primary-color);
 }
 
 .hero_btn {
@@ -129,7 +150,7 @@ ul li a {
   align-items: center;
   padding: 8px 24px;
   border-radius: 35px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
