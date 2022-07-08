@@ -174,3 +174,16 @@ ul li a {
     display: none;
   }
 }
+
+@media (max-width: 850px) {
+  .hero_left #title {
+    font-size: var(--large-font);
+  }
+  .hero_left .desc {
+    text-align: justify;
+  }
+  .hero_left .desc,
+  .hero_btn {
+    font-size: var(--small-font);
+  }
+}
