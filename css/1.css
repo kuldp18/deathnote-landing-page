@@ -397,6 +397,18 @@ footer a {
   }
 }
 
+@media (max-width: 450px) {
+  .cta_left {
+    font-size: var(--small-font);
+    text-align: center;
+  }
+
+  .cta_right a {
+    display: block;
+    padding: 8px 24px;
+  }
+}
+
 @media (max-width: 1250px) {
   .cta_container {
     flex-direction: column;
