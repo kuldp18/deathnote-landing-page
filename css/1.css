@@ -344,11 +344,18 @@ footer a {
 
 @media (max-width: 750px) {
   .character img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
   .characters {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .character img {
+    width: 200px;
+    height: 200px;
   }
 }
 
