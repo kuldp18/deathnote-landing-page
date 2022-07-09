@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 *,
 *::after,
 *::before {
@@ -12,7 +14,7 @@
   --padding-m: 1.5rem;
   --padding-s: 1.2rem;
   /* fonts */
-  --xlarge-font: 3.5rem;
+  --xlarge-font: 3rem;
   --large-font: 2rem;
   --medium-font: 1.5rem;
   --small-font: 1rem;
@@ -22,6 +24,15 @@
   --primary-color: white;
   --secondary-color: #d61831;
   --tertiary-color: #474441;
+}
+
+@font-face {
+  font-family: 'DeathNote';
+  src: url('../fonts/death_note_font_by_karlibell22-webfont.woff2')
+      format('woff2'),
+    url('../fonts/death_note_font_by_karlibell22-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 ul li {
@@ -35,6 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'DeathNote', 'Neucha', sans-serif;
 }
 
 .content_wrapper {
@@ -67,6 +79,8 @@ body {
 .header_left button {
   font-size: var(--small-font);
   cursor: pointer;
+  font-family: 'Neucha';
+  font-weight: bold;
 }
 
 .header_right .nav_links {
@@ -147,13 +161,14 @@ body {
 .hero_left .desc {
   font-size: var(--medium-font);
   color: var(--primary-color);
+  line-height: 40px;
 }
 
 .hero_btn {
   text-decoration: none;
   font-size: var(--medium-font);
   border: 3px solid var(--secondary-color);
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,6 +298,12 @@ body {
   flex-shrink: 2;
 }
 
+.cta_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cta_right a {
   padding: 16px 48px;
   border: 3px solid var(--primary-color);
@@ -305,9 +326,10 @@ footer {
   align-items: center;
   padding: var(--padding-m);
   gap: 10px;
-  font-size: var(--small-font);
+  font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.872);
   color: white;
+  font-family: 'Neucha', cursive;
 }
 
 footer a {
@@ -356,6 +378,11 @@ footer a {
     flex-direction: column;
   }
 
+  .hero_left .desc {
+    line-height: 20px;
+    font-size: var(--small-font);
+  }
+
   .hero {
     height: 90vh;
     overflow: hidden;
@@ -399,6 +426,7 @@ footer a {
   .cta_right a {
     display: block;
     padding: 8px 24px;
+    font-size: 1rem;
   }
 }
 
