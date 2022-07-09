@@ -42,6 +42,11 @@ ul li a {
   text-decoration: none;
 }
 
+/* for the rotation of the logo */
+.rotateLogo {
+  animation: rotation 6.9s linear infinite;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -335,6 +340,16 @@ footer {
 footer a {
   color: var(--primary-color);
   font-weight: bold;
+}
+
+/* animations */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /* media queries */

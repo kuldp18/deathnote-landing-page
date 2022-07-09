@@ -1,5 +1,6 @@
 const musicBtn = document.querySelector('#music-btn');
 const musicIcon = document.querySelector('#music-btn i');
+const deathNoteLogo = document.querySelector('.logo_container img');
 let isPlaying = false;
 
 const audio1 = new Audio('../audio/Ryuk.mp3');
@@ -29,6 +30,9 @@ musicBtn.addEventListener('click', () => {
     isPlaying = false;
     currentAudio.pause();
     currentAudio.currentTime = 0;
+
+    // stop rotating the logo
+    deathNoteLogo.classList.remove('rotateLogo');
   } else {
     // change the music icon
 
@@ -42,5 +46,8 @@ musicBtn.addEventListener('click', () => {
     let audio = fetchRandomAudio();
     audio.play();
     currentAudio = audio;
+
+    // start rotating the logo
+    deathNoteLogo.classList.add('rotateLogo');
   }
 });
