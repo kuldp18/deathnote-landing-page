@@ -236,6 +236,9 @@ body {
   color: var(--primary-color);
   gap: 2rem;
   padding: var(--padding-m);
+  background-image: url('../img/bg_illustration.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .quote q {
@@ -244,16 +247,6 @@ body {
 
 .quote h3 {
   font-size: var(--medium-font);
-}
-
-.quote .background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: top center;
-  z-index: -1;
-  transform: translateZ(-10px) scale(2);
 }
 
 .quote .overlay {
