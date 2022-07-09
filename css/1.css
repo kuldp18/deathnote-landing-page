@@ -342,6 +342,12 @@ footer a {
   }
 }
 
+@media (max-width: 1092px) {
+  .hero_content {
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 750px) {
   .character img {
     width: 350px;
@@ -349,6 +355,38 @@ footer a {
   }
   .characters {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero_content {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .header {
+    height: 10vh;
+  }
+
+  .header_left button {
+    width: 45px;
+    height: 45px;
+  }
+  .header_left button:nth-of-type(2) {
+    width: 90px;
+    height: 40px;
+    border-radius: 0%;
+  }
+
+  .header_left .logo_container img {
+    width: 55px;
+  }
+  .header_left .logo_container h1 {
+    font-size: var(--medium-font);
   }
 }
 
