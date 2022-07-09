@@ -1,4 +1,5 @@
 const musicBtn = document.querySelector('#music-btn');
+const musicIcon = document.querySelector('#music-btn i');
 let isPlaying = false;
 
 const audio1 = new Audio('../audio/Ryuk.mp3');
@@ -17,11 +18,25 @@ function fetchRandomAudio() {
 
 musicBtn.addEventListener('click', () => {
   if (isPlaying) {
+    // change the music icon
+
+    // remove old class
+    musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
+    // add new class
+    musicIcon.classList.add('fa-solid', 'fa-music');
+
     // stop the current audio
     isPlaying = false;
     currentAudio.pause();
     currentAudio.currentTime = 0;
   } else {
+    // change the music icon
+
+    // remove old class
+    musicIcon.classList.remove('fa-solid', 'fa-music');
+    // add new class
+    musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
+
     // play a new audio
     isPlaying = true;
     let audio = fetchRandomAudio();
