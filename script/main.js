@@ -11,6 +11,23 @@ const audios = [audio1, audio2, audio3];
 
 let currentAudio;
 
+// modal stuff
+const showModal = document.querySelector('#sources-btn');
+const closeModal = document.querySelector('#close-modal');
+const modal = document.querySelector('#modal');
+
+showModal.addEventListener('click', () => {
+  if (modal) {
+    modal.style.visibility = 'visible';
+  }
+});
+
+closeModal.addEventListener('click', () => {
+  if (modal) {
+    modal.style.visibility = 'hidden';
+  }
+});
+
 function fetchRandomAudio() {
   const randomIndex = Math.floor(Math.random() * audios.length);
   console.log(randomIndex);
