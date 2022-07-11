@@ -96,6 +96,14 @@ body {
   font-size: var(--medium-font);
 }
 
+.artist {
+  color: white;
+  font-style: italic;
+}
+.artist a {
+  color: white;
+}
+
 .content_wrapper {
   flex-grow: 1;
 }

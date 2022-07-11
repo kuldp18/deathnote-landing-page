@@ -16,8 +16,6 @@ const showModal = document.querySelector('#sources-btn');
 const closeModal = document.querySelector('#close-modal');
 const modal = document.querySelector('#modal');
 
-console.log(modal);
-
 showModal.addEventListener('click', () => {
   if (modal) {
     modal.style.visibility = 'visible';
