@@ -72,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  visibility: hidden;
 }
 
 .modal-header {
@@ -79,6 +80,10 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: var(--medium-font);
+}
+
+#close-modal {
+  cursor: pointer;
 }
 
 .modal-content {
@@ -490,5 +495,13 @@ footer a {
 
   .cta_right {
     padding: var(--padding-m) 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .modal {
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }
